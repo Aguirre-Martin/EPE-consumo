@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html, body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+nav {
+    display: flex;  
+    height: 60px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+#logo {
+    float: left;
+    max-width: 400px;
+    margin-left: 2%;
+}
+
+#logo :hover {
+    background: rgb(230,45,195);
+    background: linear-gradient(90deg, rgba(230,45,195,1) 30%, rgba(156,87,142,1) 90%, rgba(156,87,142,1) 98%);
+}
+
+#picture {
+    background: url(https://energiasae.com/wp-content/uploads/2017/10/Imagenes-de-energia-electrica-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 160vh;  
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#formulario h2 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline violet;
+}
+
+#formulario h3 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    border-radius: 8px; 
+    background-color: #000; 
+    opacity: 0.7;
+    color: #ebebeb;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    border: solid 1px violet;
+    margin-top: 20px;
+    margin-left: 30%;
+    margin-right: 30%; 
+    height: 650px;
+    width: 600px;
+}
+
+#formulario #domicilio {
+    text-align: center;
+}
+
+/*h2 {
+    text-transform: uppercase;
+}*/
+
+#tipoUsuario {
+    text-align: center;
+}
+
+#kwh {
+    text-align: center;
+}
+
+#calcular {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    gap: 10px
+}
+
+#boton {
+    border: solid 2px violet;
+    background-color: transparent;
+    color: violet;
+    border-radius: 8px;
+    padding: 30px;
+    text-transform: uppercase;
+}
+
+#form-icon {
+    padding: 5px;
+    color: violet;
+}
+
+#ayuda {
+    display: flex;
+    align-self: center;
+}
+
+#help {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline violet;
+}
+
+
+#explination h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+#iconos {   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;    
+}
+
+#iconos :hover {
+    background-color:#ebebeb;
+}
+
+#iconos a {
+    color: #000;
+}
+
+.size-icon {
+    font-size: 50px;
+}
+
+
+
+
+footer {
+    background: rgb(230,45,195);
+    background: linear-gradient(90deg, rgba(230,45,195,1) 30%, rgba(156,87,142,1) 90%, rgba(156,87,142,1) 92%);
+    text-align: center;
+    padding: 10px;
+    font-weight: 600;
+    
+}
+
+
+
+/**********************************/
+/*clases auxiliares*/
+.upper {
+    text-transform: uppercase;
+}
+
+.center {
+    text-align: center;
+}
+
+.under {
+    text-decoration: underline violet;
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+.color {
+    color: violet;
+}
+/**********************************/
+
+#resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px; 
+    background-color: transparent;  
+    border: solid 2px violet;
+    padding: 10px;
+    color: violet;
+    text-transform: uppercase;
+}
+
+#igual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

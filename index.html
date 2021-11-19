@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Calculadora de Consumo</title>
+</head>
+
+<body>
+    <main id="picture">
+        <nav class="navbar">
+            <a href="#explination" id="logo">
+                <img src="img/logo-epe-200.png" id="logo" alt="logo-epe" width="150px" height="auto">
+            </a>
+            <!--      
+                <a href="#explination"><input type="button" id="help" value="Ayuda"></a>
+            -->
+
+        </nav>
+        <div class="center"> 
+            <div id="formulario">
+                <form id="calculadora">
+                    <h1 class="title">Calculadora de Consumo</h1>
+                    <div id="tipoUsuario">
+                        <h2>Tipo de usuario</h2>
+                        <div>
+                            <h3><i class="fas fa-home" id="form-icon"></i>Residencial</h3>
+                            <label>Aplica IVA 21%</label>
+                            <input type="radio" name="usuario" value="Residencial">
+                        </div>
+                        <div>
+                            <h3><i class="fas fa-charging-station" id="form-icon"></i>Industrial</h3>
+                            <label>Aplica IVA 27%</label>
+                            <input type="radio" name="usuario" value="Industrial">
+                        </div>
+                    </div>
+                    <div id="domicilio">
+                        <h2>Zona del servicio</h2>
+                        <select id="selector" required>Zona del domicilio
+                            <option disabled selected value="0">Seleccione una opcion</option>
+                            <option>Distrito Centro: $5,80 por kWh</option>
+                            <option>Distrito Sur: $5,40 por kWh</option>
+                            <option>Distrito Oeste: $5,35 por kWh</option>
+                            <option>Distrito Norte: $5,60 por kWh</option>
+                        </select>
+                    </div>
+                    <div id="kwh">
+                        <h2>Consumo</h2>
+                        <label>Cantidad de kwh del mes</label>
+                        <input id="kwh_mes" type="number" class="rounded">
+                    </div>
+                    <div id="calcular">
+                        <input type="button" id="boton" value="Calcular" onclick="validar()">
+                        <div id="igual">
+                            <h4>=</h4>
+                        </div>
+                        <div id="resultado">
+                            <h4>resultado</h4>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+<!--------------Ayuda-------------->
+    <section id="explination">
+        <h2 id="help">Ayuda</h2>
+        <div id="iconos">
+            <a href="#tipoUsuario">
+                <div>
+                    <i class="fas fa-hand-point-up size-icon color"></i>
+                    <h3>usuario</h3>
+                    <p>Escoge si eres un usuario regular o de tipo industrial. La diferencia impactará en los impuestos
+                        que pagues</p>
+                </div>
+            </a>
+            <a href="#domicilio">
+                <div>
+                    <i class="fas fa-globe-americas size-icon color"></i>
+                    <h3>Zona</h3>
+                    <p>Setea la zona de la ciudad donde vives. El servicio tiene un precio diferente según la zona en la
+                        que vivas</p>
+                </div>
+            </a>
+            <a href="#kwh">
+                <div>
+                    <i class="fas fa-plug size-icon color"></i>
+                    <h3>Consumo</h3>
+                    <p>Ingresa la cantidad de kilowatts que consumes al mes. Con estos datos podrás calcular el precio
+                        de tu energía</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <!-- Pie de Página-->
+    <footer>
+        <p class="upper">©️ copyright - laboratorio de computacion II - tup</p>
+    </footer>
+<script src="js/index.js"></script>
+</body>
+</html>

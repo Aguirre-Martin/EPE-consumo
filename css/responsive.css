@@ -1,0 +1,147 @@
+@media (max-width:375px){
+
+.title {
+    
+    text-transform: uppercase;
+    text-align:center;
+    font-size: 20px;
+}
+
+#picture {
+    height: 100vh;
+    width: 375px;
+}
+
+#formulario{
+ /*   margin-left: 15%;*/
+}
+
+#selector {
+    width: 300px;
+    height: 25px;
+}
+
+#kwh_mes.rounded {
+    width: 300px;
+    height: 25px;
+}
+
+#help {
+    display: none;
+}
+
+#explination{
+    width: 480px;
+}
+
+#iconos {   
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;    
+}
+
+.size-icon {
+    font-size: 50px;
+}
+
+footer{
+    font-size: 22px;
+}
+
+}
+
+
+@media (max-width: 425px){
+
+#picture{
+    width: 480px;
+    height: 1000px
+}
+
+#help {
+    display: none;
+} 
+
+#explination{
+    
+}
+
+#iconos {   
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;    
+}
+
+.size-icon {
+    font-size: 50px;
+}
+
+
+footer{
+    font-size: 22px;
+}
+
+}
+
+@media (max-width: 768px) {
+#formulario{
+    font-size: 10px;
+    width: 305px;
+    height: 900px;
+}
+
+#picture{
+    height: 1050px;
+    width: 788px;
+}
+
+#calculadora{
+    font-size: 20px;
+    width: 300px;
+}
+
+#selector{
+    font-size: 15px;
+    width: 275px;
+    height: 30px;
+}
+
+#kwh_mes.rounded{
+    width: 275px;
+    height: 30px;
+}
+
+#explination{
+    font-size: 15px;
+    width: 768px
+} 
+
+#help {
+    display: none;
+} 
+
+#iconos {   
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px;    
+}
+
+.size-icon {
+    font-size: 50px;
+}
+
+footer{
+    width: 768px;
+    font-size: 22px;
+}
+
+}
